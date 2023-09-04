@@ -38,7 +38,7 @@ const Board = () => {
         setIcon(res.icon)
       } catch (err) {
         console.log(err);
-        alert(err,"taskmodal","40")
+        alert(err.data,"taskmodal","40")
       }
     }
     getBoard()
