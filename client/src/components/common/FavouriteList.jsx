@@ -18,7 +18,8 @@ const FavouriteList = () => {
         const res = await boardApi.getFavourites()
         dispatch(setFavouriteList(res))
       } catch (err) {
-        alert(err.message ,"FavouriteList","21")
+        console.log(err);
+        alert(err ,"FavouriteList","21")
         
       }
     }
@@ -43,7 +44,8 @@ const FavouriteList = () => {
     try {
       await boardApi.updateFavouritePosition({ boards: newList })
     } catch (err) {
-      alert(err.message,"FavouriteList","46")
+      console.log(err);
+      alert(err,"FavouriteList","46")
     }
   }
 

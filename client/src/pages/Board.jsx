@@ -37,7 +37,8 @@ const Board = () => {
         setIsFavourite(res.favourite)
         setIcon(res.icon)
       } catch (err) {
-        alert(err.message,"taskmodal","40")
+        console.log(err);
+        alert(err,"taskmodal","40")
       }
     }
     getBoard()
@@ -60,7 +61,8 @@ const Board = () => {
     try {
       await boardApi.update(boardId, { icon: newIcon })
     } catch (err) {
-      alert(err.message,"taskmodal","63")
+      console.log(err);
+      alert(err,"taskmodal","63")
     }
   }
 
@@ -86,7 +88,8 @@ const Board = () => {
       try {
         await boardApi.update(boardId, { title: newTitle })
       } catch (err) {
-        alert(err.message,"taskmodal","89")
+        console.log(err);
+        alert(err,"taskmodal","89")
       }
     }, timeout);
   }
@@ -99,7 +102,8 @@ const Board = () => {
       try {
         await boardApi.update(boardId, { description: newDescription })
       } catch (err) {
-        alert(err.message,"taskmodal","102")
+        console.log(err);
+        alert(err,"taskmodal","102")
       }
     }, timeout);
   }
@@ -116,7 +120,8 @@ const Board = () => {
       dispatch(setFavouriteList(newFavouriteList))
       setIsFavourite(!isFavourite)
     } catch (err) {
-      alert(err.message,"taskmodal","119")
+      console.log(err);
+      alert(err,"taskmodal","119")
     }
   }
 
@@ -136,7 +141,8 @@ const Board = () => {
       }
       dispatch(setBoards(newList))
     } catch (err) {
-      alert(err.message,"taskmodal","139")
+      console.log(err);
+      alert(err,"taskmodal","139")
     }
   }
 
