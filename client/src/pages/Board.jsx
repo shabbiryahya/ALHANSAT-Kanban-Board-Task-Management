@@ -31,6 +31,10 @@ const Board = () => {
     const getBoard = async () => {
       try {
         const res = await boardApi.getOne(boardId)
+        if(!res)
+        {
+          return;
+        }
         setTitle(res.title)
         setDescription(res.description)
         setSections(res.sections)
