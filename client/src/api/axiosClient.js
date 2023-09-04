@@ -2,7 +2,7 @@ import axios from 'axios'
 import queryString from 'query-string'
 
 // const baseUrl = 'http://127.0.0.1:5000/api/v1/'
-const baseUrl = 'http://localhost:3000/api/v1/'
+const baseUrl = 'https://alhansat-kanban-board.onrender.com/api/v1/'
 
 const getToken = () => localStorage.getItem('token')
 
