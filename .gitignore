@@ -1,4 +1,4 @@
-client/
+
 # Built application files
 *.apk
 *.aar
@@ -127,6 +127,7 @@ build/Release
 
 # Dependency directories
 node_modules/
+client/
 jspm_packages/
 
 # Snowpack dependency directory (https://snowpack.dev/)
