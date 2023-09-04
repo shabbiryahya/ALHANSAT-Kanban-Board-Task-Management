@@ -2,6 +2,7 @@
   background-color: transparent;
   border: none;
   outline: none;
+  color:black;
 }
 
 .ck.ck-editor__main>.ck-editor__editable.ck-focused {
