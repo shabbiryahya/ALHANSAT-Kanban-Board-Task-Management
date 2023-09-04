@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./binn/www"
+    "start": "nodemon ./functions/www",
+    "build":"netlify deploy --prod"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -16,6 +17,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.4.2",
     "morgan": "~1.9.1",
-    "nodemon": "^2.0.18"
+    "nodemon": "^2.0.18",
+    "serverless-http": "^3.2.0"
   }
 }

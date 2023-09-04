@@ -9,7 +9,6 @@ const debug = require('debug')('server:server');
 const http = require('http');
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
-const { log } = require('console');
 
 dotenv.config();
 
